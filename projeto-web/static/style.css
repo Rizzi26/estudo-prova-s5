@@ -1,0 +1,49 @@
+/* style.css */
+body {
+    background-image: url("/static/background.png");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.navBar {
+    background-color: #313131;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #313131;
+}
+
+ul {
+    font-size: 1em;
+    margin-top: 100px;
+    text-align: center;
+    color: #313131;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #313131;
+
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.5em;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Aplicação Web</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" sizes="16x16 32x32 48x48">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/sobre">Sobre</a>
+    </div>    
+    <h1>Ola Mundo!!</h1>
+    <form action="/sobre" method="post">
+        <input type="text" name="nome" placeholder="Digite o seu nome">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html> 
