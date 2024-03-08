@@ -5,19 +5,76 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navBar {
-    background-color: #313131;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5em;
+.main {
+    display: flex;
 }
 
-h1 {
-    text-align: center;
-    font-size: 3em;
-    color: #313131;
+.navbar {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    overflow: hidden; /* Para garantir que os elementos da barra de navegação fiquem dentro da área da div */
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
 }
+
+.navbar a {
+    float: left; /* Para alinhar os links à esquerda */
+    display: block; /* Para que cada link ocupe toda a largura disponível */
+    color: #f2f2f2; /* Cor do texto dos links */
+    text-align: center; /* Centraliza o texto dentro dos links */
+    padding: 14px 16px; /* Espaçamento interno (topo/baixo, esquerda/direita) dos links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Cor de fundo quando o mouse está sobre o link */
+    color: black; /* Cor do texto quando o mouse está sobre o link */
+}
+
+.navbar2 {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    overflow: hidden; /* Para garantir que os elementos da barra de navegação fiquem dentro da área da div */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 60px; /* largura desejada */
+    height: auto;
+    padding: 10px;
+}
+
+.mainindex {
+    display: flex;
+     /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Define a altura da div para 100% da altura da janela do navegador */
+}
+
+.entrar {
+    display: flex;
+    justify-content: space-around; /* Alinha os elementos verticalmente */
+    background-color: aqua;
+    margin: 300px; /* Adiciona algum espaçamento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */ /* Define a largura máxima da ficha */
+    width: 100%; /* Define a largura da ficha como 100% do contêiner pai */
+    align-items: center;
+}
+
+.info {
+    width: 50%;
+}
+
+.forms {
+    width: 50%;
+    flex-direction: column;
+}
+
 
 ul {
     font-size: 1em;
@@ -26,24 +83,3 @@ ul {
     color: #313131;
 }
 
-p {
-    text-align: center;
-    font-size: 1.5em;
-    color: #313131;
-
-}
-
-form {
-    text-align: center;
-    margin-top: 50px;
-}
-
-input {
-    padding: 10px;
-    font-size: 1.5em;
-}
-
-button {
-    padding: 10px;
-    font-size: 1.5em;
-}

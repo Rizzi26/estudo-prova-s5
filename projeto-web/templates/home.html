@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" sizes="16x16 32x32 48x48">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Home</h1>
+    <h2>Caminhos</h2>
+    <a href="/">Cadastrar novo caminho</a>
+    {% for caminho in caminhos %}
+    <h3>ID: {{ key }}</h3>
+    <ul>
+        <li>X: {{ caminho.position_x }}</li>
+        <li>Y: {{ caminho.position_y }}</li>
+        <li>Z: {{ caminho.position_z }}</li>
+        <li>R: {{ caminho.position_r }}</li>
+    </ul>
+    <a href="/edit/{{ key }}">Editar</a> | <a href="/delete/{{ key }}">Excluir</a>
+    {% endfor %}
+</body>
+</html>

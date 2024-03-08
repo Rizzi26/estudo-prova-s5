@@ -2,18 +2,26 @@
 <html>
 <head>
     <title>Minha Aplicação Web</title>
-    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" sizes="16x16 32x32 48x48">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="navbar">
-        <a href="/">Home</a>
-        <a href="/sobre">Sobre</a>
-    </div>    
-    <h1>Ola Mundo!!</h1>
-    <form action="/sobre" method="post">
-        <input type="text" name="nome" placeholder="Digite o seu nome">
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="mainindex">
+        <div class="entrar">
+            <div class="info">
+                <h1>Crie um novo caminho para seu robô</h1>
+            </div>
+            <div class="forms">
+                <h1>Cadastro de uma nova posição para o robô</h1>
+                <form id="login-form" action="{{ url_for('cadastro_new') }}" method="POST">
+                    <input type="text" id="x" name="position_x" placeholder="Digite a posição x">
+                    <input type="text" id="y" name="position_y" placeholder="Digite a posição y">
+                    <input type="text" id="z" name="position_z" placeholder="Digite a posição z">
+                    <input type="text" id="r" name="position_r" placeholder="Digite a posição r">
+                    <button type="submit">Cadastro</button>
+                    <a href="/home">Visualizar posições gravadas</a>
+                </form>    
+            </div>
+        </div>
+    </div>
 </body>
 </html> 
